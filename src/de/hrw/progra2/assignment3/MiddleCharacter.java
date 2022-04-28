@@ -1,7 +1,5 @@
 package de.hrw.progra2.assignment3;
 
-import java.util.Arrays;
-
 public class MiddleCharacter {
 
     public static String middleCharacter(String string){
@@ -10,7 +8,7 @@ public class MiddleCharacter {
         }
 
         else if (string.length() % 2 == 0){
-            return (String.valueOf(string.charAt((string.length() / 2) - 1)) + String.valueOf(string.charAt(string.length() / 2)));
+            return (string.charAt((string.length() / 2) - 1) + String.valueOf(string.charAt(string.length() / 2)));
         }
 
         else{
@@ -25,8 +23,10 @@ public class MiddleCharacter {
     }
 
     public static void main(String[] args) {
-        System.out.println(middleCharacter("Ka"));
-        char[] array = {'K', 'a', 'u', 's', 'a', 'r'};
-        System.out.println(middleCharacter(array));
+
+        char[] array = {'F', 'A', 'L', 'L', 'O', 'U', 'T'};
+        System.out.println("Middle-character");
+        System.out.println("[A]: Radioaktivität = " + middleCharacter("Radioaktivität"));
+        System.out.println("[B]: Fallout = " + middleCharacter(array));
     }
 }
